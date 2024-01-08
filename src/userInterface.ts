@@ -11,11 +11,11 @@
  * 輸入: { firstName: 'John', lastName: 'Doe' }
  * 輸出: 'John Doe'
  */
-interface Users {
+interface User {
 	firstName: string;
 	lastName: string;
 }
-export function getFullName(user: Users): string {
+export function getFullName(user: User): string {
 	// 在此實現函式
 	return `${user.firstName} ${user.lastName}`;
 }
