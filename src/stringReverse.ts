@@ -7,6 +7,5 @@
  */
 export function reverseString(str: string): string {
 	// 在此實現函式
-	const tempLetterList = str.split('').reverse();
-	return tempLetterList.join('');
+	return str.split('').reverse().join('');
 }

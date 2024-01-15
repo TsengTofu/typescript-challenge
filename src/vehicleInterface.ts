@@ -12,13 +12,13 @@
  * 輸出: 'Toyota Corolla (2020)'
  */
 
-interface CarProtoType {
+interface Car {
 	brand: string;
 	model: string;
 	year: number;
 }
 
-export function vehicleInfo(vehicle: CarProtoType): string {
+export function vehicleInfo(vehicle: Car): string {
 	// 在此實現函式
 	return `${vehicle.brand} ${vehicle.model} (${vehicle.year})`;
 }
