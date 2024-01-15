@@ -12,6 +12,18 @@
  * @param obj - 一個物件
  * @returns - 回傳一個物件，該物件有 get 和 set 兩個方法
  */
+//  TODO  需要複習泛型別
 export function createObjectAccessor<T>(obj: T) {
-    // 請在此處寫下你的程式碼
+	// 請在此處寫下你的程式碼
+	function get(property: keyof T) {
+		return obj[property];
+	}
+
+	function set(property: keyof T, value: T[keyof T]) {
+		obj[property] = value;
+	}
+	return {
+		get,
+		set,
+	};
 }
